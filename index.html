@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-code me-2"></i>
+                <span>Your Name</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#articles">Articles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <button class="btn btn-outline-primary" id="themeSwitcher">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero container text-center" id="home">
+        <h1 class="display-4">Frontend Developer</h1>
+        <p class="lead">HTML only with proper layout, no styling</p>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row g-4">
+            <!-- Projects Section -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Projects</h2>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">HTML Only Portfolio</li>
+                            <li class="list-group-item">Calculator</li>
+                            <li class="list-group-item">Quiz App</li>
+                            <li class="list-group-item">Countdown Timer</li>
+                            <li class="list-group-item">Product Upcoming Page</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work Experience Section -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Work Experience</h2>
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h3 class="h5">roadmap.sh</h3>
+                                <p>Solved all the frontend projects</p>
+                                <a href="#" class="btn btn-outline-primary btn-sm">Visit my Profile</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="h5">OpenSource Work</h3>
+                                <p>Contributed to 60 open-source projects. Made my own projects with 200 GitHub Stars.</p>
+                                <a href="#" class="btn btn-outline-primary btn-sm">Visit my GitHub Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Section -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Education</h2>
+                        <p class="card-text">Graduated with 3.76 out of 4 GPA. Won Acme Hackathon. Organized 30 sessions.</p>
+                        <h3 class="h5">Courses</h3>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Object-Oriented Programming</li>
+                            <li class="list-group-item">Data Structures and Algorithms</li>
+                            <li class="list-group-item">Web Engineering</li>
+                            <li class="list-group-item">Artificial Intelligence</li>
+                            <li class="list-group-item">Human-Computer Interaction</li>
+                            <li class="list-group-item">Computer Graphics</li>
+                            <li class="list-group-item">Database Management Systems</li>
+                            <li class="list-group-item">Distributed Database Systems</li>
+                            <li class="list-group-item">Discrete Mathematics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reviews Section -->
+        <section class="reviews my-5">
+            <h2 class="text-center mb-4">Reviews</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <p class="card-text review-text">"John Doe was a brilliant student; always stood out with his assignments."</p>
+                            <p class="card-text reviewer">Jane Doe, Assistant Professor</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <p class="card-text review-text">"John Doe was a brilliant student; always stood out with his assignments."</p>
+                            <p class="card-text reviewer">Jane Doe, Assistant Professor</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <p class="card-text review-text">"John Doe was a brilliant student; always stood out with his assignments."</p>
+                            <p class="card-text reviewer">Jane Doe, Assistant Professor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact my-5" id="contact">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title text-center mb-4">Contact Me</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">© all rights reserved 2025</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS for Dark Mode -->
+    <script>
+        document.getElementById('themeSwitcher').addEventListener('click', function() {
+            const html = document.documentElement;
+            const icon = this.querySelector('i');
+            
+            if (html.getAttribute('data-bs-theme') === 'dark') {
+                html.setAttribute('data-bs-theme', 'light');
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            } else {
+                html.setAttribute('data-bs-theme', 'dark');
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            }
+        });
+    </script>
+</body>
+</html>
